@@ -121,12 +121,13 @@ body {
     margin-top: 80px;
     background: var(--bg-light);
     position: relative;
+    box-shadow: 0 20px 60px rgba(0, 212, 255, 0.15);
 }
 
 .hero::before {
     content: '>_';
     position: absolute;
-    top: 5%;
+    top: 15%;
     left: 5%;
     font-size: 3rem;
     color: var(--primary-light);
@@ -135,7 +136,6 @@ body {
 }
 
 .hero-content {
-    margin-left: 30%;
     z-index: 1;
 }
 
@@ -149,7 +149,7 @@ body {
 .hero h1 {
     font-size: 4rem;
     color: var(--text-light);
-    margin-bottom: 4rem;
+    margin-bottom: 0.5rem;
     font-weight: 700;
 }
 
@@ -161,13 +161,13 @@ body {
     font-size: 2.5rem;
     color: var(--text-light);
     margin-bottom: 1rem;
-
 }
 
 .profile-image {
-    width: 550px;
-    height: 550px;
+    width: 350px;
+    height: 350px;
     border-radius: 50%;
+    border: 4px solid var(--primary-light);
     background: var(--bg-light);
     display: flex;
     align-items: center;
@@ -191,15 +191,54 @@ body {
     position: absolute;
     width: 400px;
     height: 400px;
+    border: 2px solid var(--primary-light);
     border-radius: 50%;
     opacity: 0.2;
 }
 
+.profile-image::after {
+    content: '';
+    position: absolute;
+    width: 120px;
+    height: 120px;
+    background: var(--primary-light);
+    border-radius: 50%;
+    top: -30px;
+    right: 80px;
+    opacity: 0.5;
+}
 
+.orbit-dot {
+    position: absolute;
+    width: 30px;
+    height: 30px;
+    background: var(--primary-light);
+    border-radius: 50%;
+}
 
+.orbit-dot:nth-child(1) {
+    top: -20px;
+    right: 150px;
+}
+
+.orbit-dot:nth-child(2) {
+    bottom: 100px;
+    left: -30px;
+    width: 20px;
+    height: 20px;
+    background: white;
+}
+
+.orbit-dot:nth-child(3) {
+    bottom: -20px;
+    right: 50px;
+    width: 15px;
+    height: 15px;
+    background: white;
+}
 
 .hero .credentials {
-    font-size: 1.5rem;
+    font-size: 1.3rem;
     color: var(--text-light);
     margin-bottom: 1.5rem;
     line-height: 1.8;
@@ -285,6 +324,7 @@ body {
     padding: 5rem 2rem;
     background: var(--bg-light);
     text-align: center;
+    box-shadow: 0 20px 60px rgba(0, 212, 255, 0.15);
 }
 
 .quote-section blockquote {
@@ -317,6 +357,7 @@ body {
 .skills-section {
     padding: 5rem 2rem;
     background: var(--bg-light);
+    box-shadow: 0 20px 60px rgba(0, 212, 255, 0.15);
 }
 
 .section-title {
@@ -422,6 +463,7 @@ body {
 .projects-section {
     padding: 5rem 2rem;
     background: var(--bg-light);
+    box-shadow: 0 20px 60px rgba(0, 212, 255, 0.15);
 }
 
 .projects-container {
@@ -562,6 +604,7 @@ body {
     padding: 5rem 2rem;
     background: var(--bg-light);
     text-align: center;
+    box-shadow: 0 20px 60px rgba(0, 212, 255, 0.15);
 }
 
 .contact-content {
@@ -623,6 +666,7 @@ footer {
     text-align: center;
     padding: 2rem;
     border-top: 1px solid rgba(128, 128, 128, 0.1);
+    box-shadow: 0 20px 60px rgba(0, 212, 255, 0.15);
 }
 
 /* Responsive */
