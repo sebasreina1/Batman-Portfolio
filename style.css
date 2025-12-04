@@ -129,16 +129,6 @@ body {
     box-shadow: 0 20px 60px rgba(0, 212, 255, 0.15);
 }
 
-.hero::before {
-    content: '>_';
-    position: absolute;
-    top: 15%;
-    left: 5%;
-    font-size: 3rem;
-    color: var(--primary-light);
-    opacity: 0.3;
-    font-family: monospace;
-}
 
 .hero-content {
     z-index: 1;
@@ -832,30 +822,21 @@ body {
 
 /* Hero Section */
 .hero {
-    min-height: 100vh;
+    min-height: 70vh;
     display: grid;
     grid-template-columns: 1fr 1fr;
     align-items: center;
     padding: 0 5rem;
     gap: 4rem;
     margin-top: 80px;
+    padding-bottom: 30px;
     background: var(--bg-light);
     position: relative;
 }
 
-.hero::before {
-    content: '>_';
-    position: absolute;
-    top: 5%;
-    left: 5%;
-    font-size: 3rem;
-    color: var(--primary-light);
-    opacity: 0.3;
-    font-family: monospace;
-}
 
 .hero-content {
-    margin-left: 30%;
+    margin-left: 10%;
     z-index: 1;
 }
 
